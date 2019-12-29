@@ -3,8 +3,8 @@
   "version": "1.0.1",
   "description": "imbrb-cli",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
+  "bin": {
+    "imbrb": "./index.js"
   },
   "author": "bairuobing",
   "license": "ISC",

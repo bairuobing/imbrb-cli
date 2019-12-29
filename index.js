@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const shell = require('shelljs');
 const program = require('commander');
 program.version('0.0.1').description('用于个人博客的快捷命令行工具');
