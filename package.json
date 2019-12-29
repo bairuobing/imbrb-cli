@@ -1,0 +1,15 @@
+{
+  "name": "imbrb-cli",
+  "version": "1.0.0",
+  "description": "imbrb-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "bairuobing",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^4.0.1",
+    "shelljs": "^0.8.3"
+  }
+}
