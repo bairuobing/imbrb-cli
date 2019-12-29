@@ -18,7 +18,6 @@ program
         shell.echo(pwd);
         shell.cd('~/desktop/imbrb/source/_posts');
         // 拉取最新代码仓库
-        shell.exec('git pull origin master');
         shell.ls('*.md').forEach((file) => {
             const essayName = file.slice(0, -3);
             shell.echo(essayName);
@@ -64,6 +63,14 @@ program
         gotoCurrent();
         shell.exec('hexo clean && hexo g && hexo d');
     });
+
+program
+    .command('pull')
+    .description('pull remote essay content')
+    .action(() => {
+        shell.echo('pull remote essay content...');
+        shell.exec('git pull origin master');
+    })
 
     
 program.parse(process.argv);
